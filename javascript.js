@@ -33,33 +33,49 @@ function makeGrid() {
     
     let table = document.createElement('TABLE');
     table.border = '1';
-    table.style.width ='500px';
-    table.style.height='500px';
+    table.style.width ='700px';
+    table.style.height='700px';
     table.style.borderSpacing= 'inherit';
     table.style.textAlign= 'center';
 
     let tableBody = document.createElement('TBODY');
     table.appendChild(tableBody);
 
-    for (i = 0; i < 10; i++) {
+    for (i = 0; i < 50; i++) {
         let rows = document.createElement('TR');
         tableBody.appendChild(rows);
 
-        for (j = 0; j < 10; j++) {
+        for (j = 0; j < 50; j++) {
             let columns = document.createElement('TD');
             columns.width = '75';
             columns.appendChild(document.createTextNode(''));
             rows.appendChild(columns);
+            columns.addEventListener('mouseover', ()=> {
+                columns.style.backgroundColor ='red'
+            })
         }  
     }
     grid.appendChild(table);
 
+
+    // tableBody.addEventListener('click', ()=> {
+    //     tableBody.style.backgroundColor = 'red';
+    // })
+
 }
 makeGrid();
 
-function changeColor() {
+function () {
 
+   
 }
+
+
+//console.log(rows)
+// let cell = document.getElementsByName('<tr>', '<td>');
+// console.log(cell)
+
+//grid.addEventListener('click', fill);
 
 
 
