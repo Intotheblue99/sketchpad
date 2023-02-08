@@ -1,3 +1,22 @@
-.TR {
-    background-color: red;
+
+#canvas {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    height: 50px;
+    width: 150px;
+    /* margin-left: 240px; */
+}
+
+.tune {
+    background: lightblue;
+    width: fit-content;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.enter {
+    text-align: center;
 }
