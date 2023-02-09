@@ -20,10 +20,3 @@
 .enter {
     text-align: center;
 }
-
-:root {
-    --base: #BAD455;
-}
-.color {
-    color: var(--base);
-}

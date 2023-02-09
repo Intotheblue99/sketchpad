@@ -6,7 +6,7 @@ function makeGrid() {
     let colValue = document.querySelector('.colValue').value;
     let table = document.createElement('TABLE');
     table.border = '1';
-    table.style.width ='700px';
+    table.style.width ='960px';
     table.style.height='700px';
     table.style.borderSpacing= 'inherit';
     table.style.textAlign= 'center';
